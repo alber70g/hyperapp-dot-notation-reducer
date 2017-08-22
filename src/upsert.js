@@ -17,7 +17,7 @@ export function upsert(object, propertyPath, value) {
 			if (!head) {
 				return value;
 			} else {
-				objectTail[head] = spread ? { ...objectTail[head], ...value } : value;
+				objectTail[head] = spread ? Object.assign({}, objectTail[head], value) : value;
 				return objectTail;
 			}
 		}
