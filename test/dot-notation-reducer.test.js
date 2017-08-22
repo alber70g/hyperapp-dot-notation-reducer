@@ -1,4 +1,4 @@
-import DotNotationReducer from '../src/dot-notation-reducer';
+import { DotNotationReducer } from '../src/dot-notation-reducer';
 
 beforeEach(() => {});
 

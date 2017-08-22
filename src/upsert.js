@@ -1,9 +1,11 @@
 export function upsert(object, propertyPath, value) {
-	const spread = propertyPath.startsWith('...');
+	var spread = propertyPath.startsWith('...');
 	if (spread && typeof value !== 'object') throw new Error("Spread operator '...', can only be used with objects");
 
 	function rec(objectTail, propertyPathTail, spread) {
-		let [head, ...tail] = propertyPathTail.split('.');
+    var propPaths = propertyPathTail.split('.');
+    var head = propPaths[0];
+    var tail = propPaths.splice(1);
 		tail = tail.join('.');
 
 		if (typeof objectTail[head] !== 'object') {
