@@ -8,6 +8,13 @@ Make sure you include this as the first mixin, as other mixins might want to use
 
 An example can be found here:  https://codepen.io/alber70g/pen/dzKvYB?editors=0010
 
+
+[![Travis CI](https://img.shields.io/travis/Alber70g/hyperapp-dot-notation-reducer.svg)](https://travis-ci.org/Alber70g/hyperapp-dot-notation-reducer)
+[![Codecov](https://img.shields.io/codecov/c/github/Alber70g/hyperapp-dot-notation-reducer/master.svg)](https://codecov.io/gh/hyperapp/hyperapp)
+[![npm](https://img.shields.io/npm/v/hyperapp-dot-notation-reducer.svg)](https://www.npmjs.org/package/hyperapp-dot-notation-reducer)
+
+
+
 Installation
 ------------
 
