@@ -1,7 +1,7 @@
 {
 	"name": "hyperapp-dot-notation-reducer",
 	"description": "Hyperapp mixin to use dot.notations return objects in actions.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"main": "dist/hyperapp-dot-notation-reducer.js",
 	"jsnext:main": "src/index.js",
 	"module": "src/index.js",
