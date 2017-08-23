@@ -1,12 +1,12 @@
-Dot Notation Reducer mixin for Hyperapp
-=======================================
+Dot.notation reducer mixin
+==========================
 
-This is my first official contribution to anything public. Any comments are welcome.
+This mixin allows Hyperapp-actions to return an object with a path as property: `{ '...deep.path': { deep: 'variable' } }`.
 
-Ideas
------
+The mixin is uses `update` event to modify the `newState`.
+Make sure you include this as the first mixin, as other mixins might want to use the 'normalized' state.
 
-- array index manipulation through path `{ 'app.counters[0].value': 10 } `
+An example can be found here:  https://codepen.io/alber70g/pen/dzKvYB?editors=0010
 
 Installation
 ------------
@@ -15,6 +15,10 @@ You can import the mixin and use it in the app like so:
 
 ```javascript
 import { DotNotationReducer } from 'hyperapp-dot-notation-reducer';
+// umd
+// const { DotNotationReducer } = hyperappDotNotationReducer;
+// pre es6
+// var DotNotationReducer = hyperappDotNotationReducer.DotNotationReducer;
 
 app({
   state: { something: { counter: 0 } },
@@ -88,3 +92,12 @@ after
 ```json
 { "prop": "value" }
 ```
+
+Author notes
+------------
+
+This is my first official contribution to anything public. Any comments are welcome.
+
+Further improvements:
+
+- array index manipulation through path `{ 'app.counters[0].value': 10 } `
