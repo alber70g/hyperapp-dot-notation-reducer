@@ -3,7 +3,7 @@
 	"description": "Hyperapp mixin to use dot.notations return objects in actions.",
 	"version": "0.0.1",
 	"main": "dist/hyperapp-dot-notation-reducer.js",
-	"jsnext:main": "src/index.js.js",
+	"jsnext:main": "src/index.js",
 	"module": "src/index.js",
 	"license": "MIT",
 	"repository": "alber70g/hyperapp-dot-notation-reducer",
@@ -13,7 +13,7 @@
 	"scripts": {
 		"test": "jest --coverage --no-cache",
 		"build": "npm run bundle && npm run minify",
-		"bundle": "rollup -i src/index.js -o dist/hyperapp-dot-notation-reducer.js -f umd -mn \"hyperapp-dot-notation-reducer\"",
+		"bundle": "rollup -i src/index.js -o dist/hyperapp-dot-notation-reducer.js -f umd -mn hyperappDotNotationReducer",
 		"minify": "uglifyjs dist/hyperapp-dot-notation-reducer.js -o dist/hyperapp-dot-notation-reducer.js --mangle --compress warnings=false --pure-funcs=Object.defineProperty -p relative --source-map dist/hyperapp-dot-notation-reducer.js.map",
 		"prepublish": "npm run build",
 		"format": "prettier --semi false --write 'src/**/*.js'",
