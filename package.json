@@ -7,20 +7,36 @@
 	"module": "src/index.js",
 	"license": "MIT",
 	"repository": "alber70g/hyperapp-dot-notation-reducer",
-	"files": ["src", "dist"],
+	"files": [
+		"src",
+		"dist"
+	],
 	"author": "Albert Groothedde",
-	"keywords": ["hyperapp", "react", "elm", "jsx", "virtual dom", "vdom", "hyperx", "hyperscript", "deep", "object"],
+	"keywords": [
+		"hyperapp",
+		"react",
+		"elm",
+		"jsx",
+		"virtual dom",
+		"vdom",
+		"hyperx",
+		"hyperscript",
+		"deep",
+		"object"
+	],
 	"scripts": {
 		"test": "jest --coverage --no-cache",
 		"build": "npm run bundle && npm run minify",
 		"bundle": "rollup -i src/index.js -o dist/hyperapp-dot-notation-reducer.js -f umd -mn hyperappDotNotationReducer",
-		"minify": "uglifyjs dist/hyperapp-dot-notation-reducer.js -o dist/hyperapp-dot-notation-reducer.js --mangle --compress warnings=false --pure-funcs=Object.defineProperty -p relative --source-map dist/hyperapp-dot-notation-reducer.js.map",
+		"minify": "uglifyjs dist/hyperapp-dot-notation-reducer.js -o dist/hyperapp-dot-notation-reducer.js --mangle --compress warnings=false --pure-funcs=Object.defineProperty --source-map \"filename='dist/hyperapp-dot-notation-reducer.js.map'\"",
 		"prepublish": "npm run build",
 		"format": "prettier --semi false --write 'src/**/*.js'",
 		"release": "npm run build && npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
 	},
 	"babel": {
-		"presets": ["es2015"]
+		"presets": [
+			"es2015"
+		]
 	},
 	"devDependencies": {
 		"babel-preset-es2015": "^6.24.1",
@@ -33,5 +49,9 @@
 	},
 	"peerDependencies": {
 		"hyperapp": "^0.12.0"
+	},
+	"greenkeeper": {
+		"ignore": [
+		]
 	}
 }
