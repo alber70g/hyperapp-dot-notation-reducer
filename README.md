@@ -1,6 +1,8 @@
 Dot.notation reducer mixin
 ==========================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Alber70g/hyperapp-dot-notation-reducer.svg)](https://greenkeeper.io/)
+
 This mixin allows Hyperapp-actions to return an object with a path as property: `{ '...deep.path': { deep: 'variable' } }`.
 
 The mixin is uses `update` event to modify the `newState`.
