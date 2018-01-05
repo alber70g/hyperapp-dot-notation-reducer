@@ -1,3 +1,8 @@
+
+# DEPRECATION NOTICE
+This package is deprecated since events were removed from Hyperapp 0.x and didn't come back in 1.x.
+
+
 Dot.notation reducer mixin
 ==========================
 
